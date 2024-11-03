@@ -39,7 +39,7 @@ module.exports = {
     static: './dist',
     port: 3000,
     hot: true,
-    open: false,
+    open: true,
     historyApiFallback: true,
   },
   mode: 'development',

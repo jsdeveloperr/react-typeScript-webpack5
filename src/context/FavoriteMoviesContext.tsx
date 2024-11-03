@@ -1,15 +1,5 @@
 import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
-import { Movie } from '../types/types';
-
-interface FavoriteMoviesContextProps {
-  favorites: Movie[];
-  addFavorite: (movie: Movie) => void;
-  removeFavorite: (movieId: number) => void;
-  toggleFavorite: (movie: Movie) => void;
-  resetFavorites: () => void;
-  favoriteCount: number;
-  isFavorite: (movieId: number) => boolean;
-}
+import { Movie, FavoriteMoviesContextProps } from '../types/types';
 
 const FavoriteMoviesContext = createContext<FavoriteMoviesContextProps | undefined>(undefined);
 

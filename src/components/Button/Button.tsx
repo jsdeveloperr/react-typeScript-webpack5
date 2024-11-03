@@ -1,5 +1,3 @@
-// src/components/Button/Button.tsx
-
 import React from 'react';
 import './Button.scss';
 

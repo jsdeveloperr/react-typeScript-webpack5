@@ -1,5 +1,3 @@
-// src/components/ErrorBoundary/ErrorBoundary.tsx
-
 import React, { Component } from 'react';
 import { ErrorBoundaryProps, ErrorBoundaryState } from '../../types/types';
 import { CONSTANTS } from "../../utilities/constants";

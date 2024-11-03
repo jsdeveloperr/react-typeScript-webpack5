@@ -1,5 +1,3 @@
-// src/context/MovieContext.tsx
-
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { fetchMovies } from '../api/movies/moviesApi';
 import { Movie, MovieContextProps } from '../types/types';

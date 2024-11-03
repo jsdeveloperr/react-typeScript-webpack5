@@ -1,4 +1,3 @@
-// src/components/Dropdown/Dropdown.tsx
 import React, { useState, useRef, useEffect } from 'react';
 import { DropdownOption } from '../../types/types';
 import './Dropdown.scss';

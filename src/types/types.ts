@@ -21,6 +21,16 @@ export interface MovieContextProps {
   error: string | null;
 }
 
+export interface FavoriteMoviesContextProps {
+  favorites: Movie[];
+  addFavorite: (movie: Movie) => void;
+  removeFavorite: (movieId: number) => void;
+  toggleFavorite: (movie: Movie) => void;
+  resetFavorites: () => void;
+  favoriteCount: number;
+  isFavorite: (movieId: number) => boolean;
+}
+
 export interface DropdownOption {
   label: string;
   value: string | null;

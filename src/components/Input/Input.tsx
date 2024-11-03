@@ -1,5 +1,3 @@
-// src/components/Input/Input.tsx
-
 import React from 'react';
 import { useController, Control } from 'react-hook-form';
 import './Input.scss';
