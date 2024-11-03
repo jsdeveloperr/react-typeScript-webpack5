@@ -1,0 +1,21 @@
+/* src/components/Input/Input.scss */
+
+.inputContainer {
+    margin-bottom: 1rem;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .errorText {
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    text-align: left;
+  }
+  

@@ -1,0 +1,29 @@
+/* src/components/Button/Button.scss */
+
+.button {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 2rem 0;
+  color: #3B82F6;
+  border: 1px solid #3B82F6;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Space between text and icon */
+  transition: background-color 0.3s;
+
+  &:disabled {
+    background-color: #aaa;
+    color: #ffffff;
+    cursor: not-allowed;
+  }
+
+  svg {
+    width: 1em; /* Icon size relative to font-size */
+    height: 1em;
+  }
+}

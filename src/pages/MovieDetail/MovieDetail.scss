@@ -1,0 +1,130 @@
+@use '../../index.scss' as *;
+
+div.movie-detail-main {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+
+  .movie-header {
+    text-align: center;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      margin-top: 30px;
+      color: #111827;
+    }
+  }
+
+  .movie-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      object-position: center;
+      border-radius: 8px;
+    }
+
+    .favorite {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 30px;
+      height: 30px;
+      background: rgba(243, 244, 246, 0.5);
+      backdrop-filter: blur(1px);
+      border-radius: 50%;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      svg {
+        color: #e63946;
+        background: transparent;
+        width: 24px;
+        height: 24px;
+      }
+
+      &:hover {
+        background: rgba(190, 18, 60, 0.5);
+      }
+    }
+
+    .series-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #D1D5DB;
+      color: #111827;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 10px;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+  }
+
+  .movie-summary {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #333;
+    margin: 40px auto;
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #E5E7EB;
+    margin: 20px 0;
+  }
+
+  .movie-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+
+    p {
+      font-size: 1rem;
+      color: #666;
+      margin: 5px 0;
+    }
+
+    .imdb-rating {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 40px;
+        height: auto;
+        margin-right: 8px;
+      }
+
+      span {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
