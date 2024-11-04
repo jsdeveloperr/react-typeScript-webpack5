@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
-import { Movie, FavoriteMoviesContextProps } from '../types/types';
+import { Movie, FavoriteMoviesContextProps } from '@/types/types';
 
 const FavoriteMoviesContext = createContext<FavoriteMoviesContextProps | undefined>(undefined);
 

@@ -5,8 +5,8 @@ import {
   InstagramIcon,
   TwitterIcon,
   YoutubeIcon,
-} from '../../assets/icons/Icons';
-import { CONSTANTS } from '../../utilities/constants';
+} from '@/assets/icons/Icons';
+import { CONSTANTS } from '@/utilities/constants';
 import './Footer.scss';
 
 const socialMediaLinks = [

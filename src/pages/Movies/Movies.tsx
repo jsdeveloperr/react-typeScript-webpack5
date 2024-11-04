@@ -1,11 +1,11 @@
 import React, { useState, useMemo } from "react";
-import { useMovieContext } from "../../context/MovieContext";
-import { useFavoriteMovies } from "../../context/FavoriteMoviesContext";
-import MovieCard from "../../components/MovieCard/MovieCard";
-import Dropdown from "../../components/Dropdown/Dropdown";
-import Layout from "../../layouts/Layout/Layout";
-import { FilterIcon, SortIcon } from "../../assets/icons/Icons";
-import { CONSTANTS } from "../../utilities/constants";
+import { useMovieContext } from "@/context/MovieContext";
+import { useFavoriteMovies } from "@/context/FavoriteMoviesContext";
+import { FilterIcon, SortIcon } from "@/assets/icons/Icons";
+import { CONSTANTS } from "@/utilities/constants";
+import MovieCard from "@/components/MovieCard/MovieCard";
+import Dropdown from "@/components/Dropdown/Dropdown";
+import Layout from "@/layouts/Layout/Layout";
 import "./Movies.scss";
 
 const Movies = () => {

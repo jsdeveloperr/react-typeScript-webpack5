@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { fetchMovies } from '../api/movies/moviesApi';
-import { Movie, MovieContextProps } from '../types/types';
-import { CONSTANTS } from '../utilities/constants';
+import { fetchMovies } from '@/api/movies/moviesApi';
+import { Movie, MovieContextProps } from '@/types/types';
+import { CONSTANTS } from '@/utilities/constants';
 
 const MovieContext = createContext<MovieContextProps | undefined>(undefined);
 

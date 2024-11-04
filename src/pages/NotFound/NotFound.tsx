@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CONSTANTS } from "../../utilities/constants";
+import { CONSTANTS } from "@/utilities/constants";
 import "./NotFound.scss";
 
 const NotFound = () => {

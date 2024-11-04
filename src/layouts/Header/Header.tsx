@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { LogoutIcon, SearchIcon } from "../../assets/icons/Icons";
-import { useMovieContext } from "../../context/MovieContext";
-import { useFavoriteMovies } from "../../context/FavoriteMoviesContext";
-import { CONSTANTS } from "../../utilities/constants";
-import Loader from "../../components/Loader/Loader";
-import SearchCard from "../../components/SearchCard/SearchCard";
+import { LogoutIcon, SearchIcon } from "@/assets/icons/Icons";
+import { useMovieContext } from "@/context/MovieContext";
+import { useFavoriteMovies } from "@/context/FavoriteMoviesContext";
+import { CONSTANTS } from "@/utilities/constants";
+import Loader from "@/components/Loader/Loader";
+import SearchCard from "@/components/SearchCard/SearchCard";
 import "./Header.scss";
 
 const Header = () => {

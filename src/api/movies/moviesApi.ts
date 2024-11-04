@@ -1,5 +1,5 @@
 import axiosInstance from '../axios/axiosConfig';
-import { CONSTANTS } from '../../utilities/constants';
+import { CONSTANTS } from '@/utilities/constants';
 
 export const fetchMovies = async () => {
   try {

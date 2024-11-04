@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import images from '../../utilities/assetsLoader';
-import { Movie } from '../../types/types';
-import { CONSTANTS } from '../../utilities/constants';
+import images from '@/utilities/assetsLoader';
+import { Movie } from '@/types/types';
+import { CONSTANTS } from '@/utilities/constants';
 import './SearchCard.scss';
 
 type SearchCardProps = {

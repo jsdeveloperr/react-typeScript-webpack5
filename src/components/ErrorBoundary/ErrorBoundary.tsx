@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { ErrorBoundaryProps, ErrorBoundaryState } from '../../types/types';
-import { CONSTANTS } from "../../utilities/constants";
+import { ErrorBoundaryProps, ErrorBoundaryState } from '@/types/types';
+import { CONSTANTS } from "@/utilities/constants";
 import './ErrorBoundary.scss';
 
 class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {

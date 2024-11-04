@@ -1,14 +1,14 @@
 import React from "react";
 import { useForm, FormProvider } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import { useMovieContext } from "../../context/MovieContext";
+import { useMovieContext } from "@/context/MovieContext";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { CONSTANTS } from "../../utilities/constants";
-import { ChevronRightIcon } from "../../assets/icons/Icons";
-import Form from "../../components/Form/Form";
-import Input from "../../components/Input/Input";
-import Button from "../../components/Button/Button";
-import Footer from "../../layouts/Footer/Footer";
+import { CONSTANTS } from "@/utilities/constants";
+import { ChevronRightIcon } from "@/assets/icons/Icons";
+import Form from "@/components/Form/Form";
+import Input from "@/components/Input/Input";
+import Button from "@/components/Button/Button";
+import Footer from "@/layouts/Footer/Footer";
 import * as Yup from "yup";
 import "./Login.scss";
 

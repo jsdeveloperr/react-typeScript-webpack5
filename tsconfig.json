@@ -8,7 +8,18 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": "./src"
+    "baseUrl": "./",
+    "paths": {
+      "@/api/*": ["src/api/*"],
+      "@/assets/*": ["src/assets/*"],
+      "@/components/*": ["src/components/*"],
+      "@/context/*": ["src/context/*"],
+      "@/layouts/*": ["src/layouts/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/router/*": ["src/router/*"],
+      "@/types/*": ["src/types/*"],
+      "@/utilities/*": ["src/utilities/*"]
+    }
   },
   "include": ["src"]
 }

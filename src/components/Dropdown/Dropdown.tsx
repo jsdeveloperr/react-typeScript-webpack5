@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { DropdownOption } from '../../types/types';
+import { DropdownOption } from '@/types/types';
 import './Dropdown.scss';
 
 type DropdownProps = {

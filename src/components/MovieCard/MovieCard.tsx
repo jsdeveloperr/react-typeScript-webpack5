@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { HeartIcon} from '../../assets/icons/Icons';
-import { Movie } from '../../types/types';
-import IMDbLogo from '../../assets/IMDb.png';
-import { useFavoriteMovies } from '../../context/FavoriteMoviesContext';
+import { useFavoriteMovies } from '@/context/FavoriteMoviesContext';
+import { CONSTANTS } from '@/utilities/constants';
+import { Movie } from '@/types/types';
+import { HeartIcon} from '@/assets/icons/Icons';
+import IMDbLogo from '@/assets/IMDb.png';
+import images from '@/utilities/assetsLoader';
 import './MovieCard.scss';
-import images from '../../utilities/assetsLoader';
-import { CONSTANTS } from '../../utilities/constants';
 
 type MovieCardProps = {
  movie: Movie;

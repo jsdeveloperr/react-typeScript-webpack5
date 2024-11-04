@@ -11,6 +11,17 @@ module.exports = {
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
+    alias: {
+      '@/api': path.resolve(__dirname, 'src/api'),
+      '@/assets': path.resolve(__dirname, 'src/assets'),
+      '@/components': path.resolve(__dirname, 'src/components'),
+      '@/context': path.resolve(__dirname, 'src/context'),
+      '@/layouts': path.resolve(__dirname, 'src/layouts'),
+      '@/pages': path.resolve(__dirname, 'src/pages'),
+      '@/router': path.resolve(__dirname, 'src/router'),
+      '@/types': path.resolve(__dirname, 'src/types'),
+      '@/utilities': path.resolve(__dirname, 'src/utilities'),
+    },
   },
   module: {
     rules: [

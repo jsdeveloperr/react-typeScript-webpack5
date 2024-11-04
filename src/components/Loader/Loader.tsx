@@ -1,4 +1,4 @@
-import { CONSTANTS } from "../../utilities/constants";
+import { CONSTANTS } from "@/utilities/constants";
 import './Loader.scss';
 
 const Loader = () => {
