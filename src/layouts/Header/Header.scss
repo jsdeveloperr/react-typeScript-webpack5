@@ -3,7 +3,6 @@
 header {
   width: 100vw;
   height: 80px;
-  //   border: 1px solid #fff;
   background: none;
   z-index: 1000;
 
@@ -65,7 +64,6 @@ header {
 
       input::placeholder {
         color: #404040;
-        // opacity: 0.5;
         transition: all 0.2s ease-in-out;
       }
 
@@ -158,16 +156,10 @@ header {
       background: transparent;
       span {
         color: #000;
-        // margin-left: 5px;
       }
     }
 
     button {
-      // width: 36px;
-      // height: 36px;
-      // flex-shrink: 0;
-      // background: $rose-700;
-      // border-radius: 50%;
       border: none;
       display: flex;
       justify-content: center;
@@ -181,33 +173,32 @@ header {
   }
 
   &.active {
-    // background-color: rgba(17, 24, 39, 0.8);
     background-color: #fff;
   }
 }
 
 @media only screen and (max-width: 768px) {
   header {
-    & > a {
-      span {
-        display: none;
-      }
-    }
+    padding: 20px;
 
     .search {
-      min-width: 200px;
-    }
-
-    .search-content {
-      top: 40px;
-      left: 0;
-      min-width: 250px;
-      max-height: 350px;
+      width: 70%;
+      margin-right: 10px;
     }
 
     .menu {
-      & > button {
-        display: none;
+      gap: 15px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      & > a,
+      button {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
       }
     }
   }

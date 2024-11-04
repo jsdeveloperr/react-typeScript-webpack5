@@ -46,7 +46,7 @@ const MovieCard = ({ movie }: MovieCardProps) => {
           <p className="ratting">
             <span>
               <img src={IMDbLogo} alt={CONSTANTS.MOVIE_CARD.IMDB_LOGO_ALT} />
-              <span>{(movie.imdb * 10).toFixed(1)} {CONSTANTS.MOVIE_CARD.RATING_SUFFIX}</span>
+              <span>{movie.imdb} {CONSTANTS.MOVIE_CARD.RATING_SUFFIX}</span>
             </span>
           </p>
           <p className="genre">{movie.category}</p>

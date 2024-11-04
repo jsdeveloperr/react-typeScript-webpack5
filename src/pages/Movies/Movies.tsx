@@ -86,7 +86,7 @@ const Movies = () => {
       <div className="home-main">
         <section className="movies">
           <div className="sec-head">
-            <h1>Movies</h1>
+            <h1>{CONSTANTS.MOVIES.PAGE_TITLE}</h1>
             <div className="filters">
               <Dropdown
                 label={CONSTANTS.MOVIES.SORT_OPTIONS.SORT_NAME}

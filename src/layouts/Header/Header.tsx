@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { LogoutIcon, SearchIcon } from "../../assets/icons/Icons";
 import { useMovieContext } from "../../context/MovieContext";
 import { useFavoriteMovies } from "../../context/FavoriteMoviesContext";
@@ -10,6 +10,7 @@ import "./Header.scss";
 
 const Header = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const { searchMovies, searchResult, isSearching, resetMovies } = useMovieContext();
   const { favoriteCount, resetFavorites } = useFavoriteMovies();
   const [search, setSearch] = useState("");
@@ -38,8 +39,9 @@ const Header = () => {
 
   return (
     <header className={activeScroll ? "active" : ""}>
-      <Link to="#" aria-label="home"></Link>
+    <Link to="#" aria-label="home"></Link>
 
+    {location.pathname !== `/movie/${location.pathname.split("/")[2]}` && (
       <div className={`search ${active ? "active" : ""}`}>
         <label aria-label="search">
           <input
@@ -71,16 +73,17 @@ const Header = () => {
           </div>
         )}
       </div>
+    )}
 
-      <div className="menu">
-        <Link to="#">
-          {CONSTANTS.HEADER.FAVORITES_LABEL} <span>{favoriteCount}</span>
-        </Link>
-        <button onClick={handleLogout}>
-          {CONSTANTS.HEADER.LOGOUT_LABEL} <LogoutIcon />
-        </button>
-      </div>
-    </header>
+    <div className="menu">
+      <Link to="#">
+        {CONSTANTS.HEADER.FAVORITES_LABEL} <span>{favoriteCount}</span>
+      </Link>
+      <button onClick={handleLogout}>
+        {CONSTANTS.HEADER.LOGOUT_LABEL} <LogoutIcon />
+      </button>
+    </div>
+  </header>
   );
 };
 

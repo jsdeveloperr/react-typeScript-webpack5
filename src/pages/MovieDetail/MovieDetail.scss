@@ -9,14 +9,11 @@ div.movie-detail-main {
   padding: 40px;
 
   .movie-header {
-    text-align: center;
-    padding: 32px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    text-align: center;
+    padding-bottom: 2rem;
 
     h1 {
       font-size: 2rem;
